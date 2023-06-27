@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- BARRE DE NAV toutes les pages  -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="../img/logo-hotelcop-nobg.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-center" href="./chambre.html">Chambres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="./restaurant.html"
+                >Restaurant</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="./spa.html">Spa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li>
+                  <a class="dropdown-item" href="./about.html">À propos</a>
+                </li>
+                <li><a class="dropdown-item" href="./avis.html">Avis</a></li>
+                <li>
+                  <a class="dropdown-item" href="./divers.html">Divers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./actualites.html"
+                    >Actualités</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="./reservation-en-ligne.html"
+                >Réserver</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-globe" style="color: #b08f65"></i> Langue
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">Anglais</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex align-items-center">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Rechercher"
+                  aria-label="Rechercher"
+                />
+                <button class="btn btn-navbar" type="submit">Go</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin de la nav  -->
+    <div
+      id="top-contenant"
+      class="container-fluid d-flex align-items-center justify-content-center"
+    >
+      <div class="position-relative">
+        <img
+          src="../img/banniere-actu.jpg"
+          alt="banniere-actu"
+          class="img-fluid"
+        />
+        <div
+          class="position-absolute top-50 start-50 translate-middle text-center"
+        >
+          <h5>Infos pratiques</h5>
+          <p>Tout ce que devez savoir sur notre luxueux Hôtel</p>
+        </div>
+      </div>
+    </div>
+    <div class="container actu-hotel">
+      <h1>Actualités Hôtelières</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="../img/actu-bdm.jpg"
+              class="card-img-top img-fluid"
+              alt="actu-bdm"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Nouvel Hôtel de Luxe Ouvert en Bord de Mer
+              </h5>
+              <p class="card-text">
+                Découvrez le dernier bijou de l'hôtellerie de luxe avec
+                l'ouverture d'un nouvel hôtel en bord de mer. Profitez de vues
+                imprenables, de chambres élégantes et d'un service cinq étoiles
+                pour une expérience inoubliable.
+              </p>
+              <a href="#"><button class="btn-actu">En savoir plus</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="../img/actu-design.jpg"
+              class="card-img-top img-fluid"
+              alt="actu-design"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Tendances de Design d'Intérieur dans les Hôtels
+              </h5>
+              <p class="card-text">
+                Plongez dans les dernières tendances de design d'intérieur dans
+                l'industrie hôtelière. Des espaces modernes et épurés aux décors
+                audacieux et artistiques, les hôtels se réinventent pour offrir
+                des expériences uniques à leurs clients.
+              </p>
+              <a href="#"><button class="btn-actu">En savoir Plus</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="../img/actu-restau.jpg"
+              class="card-img-top img-fluid"
+              alt="actu-restau"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Le Voyage Culinaire à l'Honneur dans les Hôtels
+              </h5>
+              <p class="card-text">
+                Explorez les délices de la cuisine dans les hôtels de renom. Des
+                chefs étoilés aux menus gastronomiques, les hôtels font de la
+                gastronomie une expérience incontournable pour les voyageurs
+                avides de découvertes culinaires
+              </p>
+              <a href="#"><button class="btn-actu">En savoir plus</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="../img/actu-spa.jpg"
+              class="card-img-top img-fluid"
+              alt="actu-spa"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Le Bien-être au Centre des Nouveaux Hôtels Spa
+              </h5>
+              <p class="card-text">
+                Détendez-vous et ressourcez-vous dans les nouveaux hôtels spa.
+                Des installations modernes de bien-être, des soins revitalisants
+                et des programmes de remise en forme vous attendent pour une
+                escapade relaxante et régénérante.
+              </p>
+              <a href="#"><button class="btn-actu">En savoir Plus</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="../img/actu-techno.jpg"
+              class="card-img-top img-fluid"
+              alt="actu-techno"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                La Technologie au Service de l'Expérience Client dans les Hôtels
+              </h5>
+              <p class="card-text">
+                Découvrez comment la technologie révolutionne l'expérience
+                client dans l'industrie hôtelière. Des clés numériques aux
+                assistants virtuels, les hôtels intègrent des innovations
+                technologiques pour offrir un service personnalisé et simplifié
+                à leurs clients
+              </p>
+              <a href="#"><button class="btn-actu">En savoir plus</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="../img/actu-eco.jpg"
+              class="card-img-top img-fluid"
+              alt="actu-eco"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nouvelle Tendance : Hôtels Écologiques</h5>
+              <p class="card-text">
+                Découvrez la montée en puissance des hôtels écologiques axés sur
+                la durabilité. Des initiatives respectueuses de l'environnement,
+                des matériaux écologiques et des pratiques responsables font de
+                ces établissements des choix populaires pour les voyageurs
+                soucieux de l'écologie
+              </p>
+              <a href="#"><button class="btn-actu">En savoir Plus</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BAS DE PAGE toutes les pages  -->
+    <div id="grid-bot" class="container">
+      <div class="row g-0">
+        <div class="col">
+          <div class="position-relative">
+            <a href="./spa.html">
+              <img
+                src="../img/grid-spa.jpg"
+                alt="grid-spa"
+                class="image-carree"
+            /></a>
+            <div class="overlay-text">
+              <h5>SPA</h5>
+              <p>Un espace bien-être unique</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="position-relative">
+            <a href="./chambre.html">
+              <img
+                src="../img/grid-chambre.jpg"
+                alt="grid-chambre"
+                class="image-carree"
+              />
+            </a>
+            <div class="overlay-text">
+              <h5>CHAMBRES</h5>
+              <p>Confort et élégance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class="col">
+          <div class="position-relative">
+            <a href="./restaurant.html">
+              <img
+                src="../img/grid-restau.jpg"
+                alt="grid-restau"
+                class="image-carree"
+            /></a>
+            <div class="overlay-text">
+              <h5>RESTAURANT</h5>
+              <p>L'art culinaire à son paroxysme</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="position-relative">
+            <a href="#">
+              <img
+                src="../img/grid-contact.jpg"
+                alt="grid-contact"
+                class="image-carree"
+            /></a>
+            <div class="overlay-text">
+              <h5>CONTACT</h5>
+              <p>Service 24/24</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER  -->
+    <div id="footer-bot" class="row text-center g-0">
+      <div class="col col-gauche">
+        <h6>HÔTEL COP</h6>
+        <p>1 avenue Montaigne, 75008 Paris</p>
+        <p>
+          <i class="fa-solid fa-square-phone" style="color: #b08f65"></i> Tél :
+          +33 1 00 00 00 00
+        </p>
+        <a href="mailto:contact@hotelcop.fr"
+          ><p>Mail : contact@hotelcop.fr</p></a
+        >
+      </div>
+      <div class="col col-mid">
+        <h6>Nos Réseaux Sociaux</h6>
+
+        <a href="#"
+          ><i class="fa-brands fa-facebook fa-2xl" style="color: #b08f65"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-instagram fa-2xl" style="color: #b08f65"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-pinterest fa-2xl" style="color: #b08f65"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-twitter fa-2xl" style="color: #b08f65"></i
+        ></a>
+      </div>
+      <div class="col col-droite">
+        <h6>Informations pratiques</h6>
+        <a href="./about.html">Nous contacter</a>
+        <a href="./reservation-en-ligne.html">Réserver</a>
+        <a href="./restaurant.html">Le Restaurant</a>
+        <a href="./spa.html">Le Spa</a>
+        <a href="./plan.html">Plan du site</a>
+      </div>
+    </div>
+    <div class="col-12 text-center g-0" id="footera">
+      ©2023 | Site propulsé par Alexis Hamieau
+    </div>
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

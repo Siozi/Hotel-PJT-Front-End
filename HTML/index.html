@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accueil HOTELCOP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- BARRE DE NAV toutes les pages  -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="../img/logo-hotelcop-nobg.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-center" href="./chambre.html">Chambres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="./restaurant.html"
+                >Restaurant</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="./spa.html">Spa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li>
+                  <a class="dropdown-item" href="./about.html">À propos</a>
+                </li>
+                <li><a class="dropdown-item" href="./avis.html">Avis</a></li>
+                <li>
+                  <a class="dropdown-item" href="./divers.html">Divers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./actualites.html"
+                    >Actualités</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="./reservation-en-ligne.html"
+                >Réserver</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-globe" style="color: #b08f65"></i> Langue
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">Anglais</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex align-items-center">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Rechercher"
+                  aria-label="Rechercher"
+                />
+                <button class="btn btn-navbar" type="submit">Go</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin de la nav  -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <a href="./chambre.html">
+            <img
+              src="../img/chambre-carou.jpg"
+              class="d-block w-100 carousel-img"
+              alt="chambre"
+          /></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Chambres Luxueuses</h5>
+            <p>Profitez d'un confort exceptionnel au coeur de la capitale</p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <a href="./restaurant.html">
+            <img
+              src="../img/restau-carou.jpg"
+              class="d-block w-100 carousel-img"
+              alt="restau"
+          /></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Le Restaurant</h5>
+            <p>Un voyage gastronomique unique.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="./spa.html">
+            <img
+              src="../img/spa-carou.jpg"
+              class="d-block w-100 carousel-img"
+              alt="spa"
+          /></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Spa</h5>
+            <p>Un espace détente extraordinaire</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div id="apropos" class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img
+            src="../img/corridor-index.jpg"
+            alt="corridor"
+            class="image-ronde"
+          />
+        </div>
+        <div id="apropos-descri" class="col">
+          <h5>À PROPOS DE L'HÔTEL</h5>
+          <p>
+            Bienvenue à notre hôtel de luxe au cœur de Paris, où l'élégance
+            rencontre le raffinement. Niché dans l'un des quartiers les plus
+            prestigieux de la capitale, notre établissement vous offre une
+            expérience inoubliable et un service d'exception.
+          </p>
+        </div>
+      </div>
+
+      <div id="lesservices" class="container text-center">
+        <div class="row">
+          <div id="lesservices-descri" class="col">
+            <h5>LES SERVICES</h5>
+            <p>
+              Des chambres somptueuses, un restautant primé, un spa exclusif.
+              Découvrez le charme intemporel de Paris et laissez-vous séduire
+              par le luxe et l'art de vivre qui caractérisent notre hôtel
+            </p>
+          </div>
+
+          <div class="col">
+            <img
+              src="../img/reception-index.jpg"
+              alt="reception"
+              class="image-ronde"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container serv-index">
+      <div class="row text-center">
+        <div class="col">
+          <i class="fa-solid fa-phone-volume fa-2xl" style="color: #b08f65"></i>
+          <p>Room Service</p>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-spa fa-2xl" style="color: #b08f65"></i>
+          <p>Spa</p>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-key fa-2xl" style="color: #b08f65"></i>
+          <p>Conciergierie</p>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-moon fa-2xl" style="color: #b08f65"></i>
+          <p>Au coeur de Paris</p>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-car fa-2xl" style="color: #b08f65"></i>
+          <p>Service de Voiturier</p>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-bed fa-2xl" style="color: #b08f65"></i>
+          <p>Chambres Luxueuses</p>
+        </div>
+      </div>
+    </div>
+    <!-- BAS DE PAGE toutes les pages  -->
+    <div id="grid-bot" class="container">
+      <div class="row g-0">
+        <div class="col">
+          <div class="position-relative">
+            <a href="./spa.html">
+              <img
+                src="../img/grid-spa.jpg"
+                alt="grid-spa"
+                class="image-carree"
+            /></a>
+            <div class="overlay-text">
+              <h5>SPA</h5>
+              <p>Un espace bien-être unique</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="position-relative">
+            <a href="./chambre.html">
+              <img
+                src="../img/grid-chambre.jpg"
+                alt="grid-chambre"
+                class="image-carree"
+              />
+            </a>
+            <div class="overlay-text">
+              <h5>CHAMBRES</h5>
+              <p>Confort et élégance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class="col">
+          <div class="position-relative">
+            <a href="./restaurant.html">
+              <img
+                src="../img/grid-restau.jpg"
+                alt="grid-restau"
+                class="image-carree"
+            /></a>
+            <div class="overlay-text">
+              <h5>RESTAURANT</h5>
+              <p>L'art culinaire à son paroxysme</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="position-relative">
+            <a href="#">
+              <img
+                src="../img/grid-contact.jpg"
+                alt="grid-contact"
+                class="image-carree"
+            /></a>
+            <div class="overlay-text">
+              <h5>CONTACT</h5>
+              <p>Service 24/24</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NEWSLETTER -->
+    <div class="container ctn-newsletter">
+      <div class="row row-newsletter">
+        <div class="col">
+          <p class="abo-news-txt">S'inscrire à la NewsLetter</p>
+          <form>
+            <div class="form-group email-nl">
+              <label for="email">Adresse e-mail :</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Votre adresse e-mail"
+              />
+            </div>
+            <button type="submit" class="btn btn-news">S'abonner</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer-bot" class="row text-center g-0">
+      <div class="col col-gauche">
+        <h6>HÔTEL COP</h6>
+        <p>1 avenue Montaigne, 75008 Paris</p>
+        <p>
+          <i class="fa-solid fa-square-phone" style="color: #b08f65"></i> Tél :
+          +33 1 00 00 00 00
+        </p>
+        <a href="mailto:contact@hotelcop.fr"
+          ><p>Mail : contact@hotelcop.fr</p></a
+        >
+      </div>
+      <div class="col col-mid">
+        <h6>Nos Réseaux Sociaux</h6>
+
+        <a href="#"
+          ><i class="fa-brands fa-facebook fa-2xl" style="color: #b08f65"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-instagram fa-2xl" style="color: #b08f65"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-pinterest fa-2xl" style="color: #b08f65"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-twitter fa-2xl" style="color: #b08f65"></i
+        ></a>
+      </div>
+      <div class="col col-droite">
+        <h6>Informations pratiques</h6>
+        <a href="./about.html">Nous contacter</a>
+        <a href="./reservation-en-ligne.html">Réserver</a>
+        <a href="./restaurant.html">Le Restaurant</a>
+        <a href="./spa.html">Le Spa</a>
+        <a href="./plan.html">Plan du site</a>
+      </div>
+    </div>
+    <div class="col-12 text-center g-0" id="footera">
+      ©2023 | Site propulsé par Alexis Hamieau
+    </div>
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
